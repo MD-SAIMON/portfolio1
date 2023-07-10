@@ -1,5 +1,63 @@
+/* common css */
+:root {
+    --primary-color: #FD6E0A;
+    --dark-color: #474747;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* logo */
+.logo {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+/* menu */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+nav li a {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
 }
